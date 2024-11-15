@@ -14,7 +14,7 @@
 .modal-dialog {
   max-width: 50%;
   width: 40%;
-  height: auto; /* Allow auto height for content */
+  height: auto;
   max-height: 30vh;
 }
 
@@ -47,81 +47,6 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) { /* Tablet and smaller screens */
-  .modal-dialog {
-    max-width: 80%;
-    width: 90%;
-    height: auto; /* Allow auto height for content */
-    max-height: 50vh; /* Restrict the height of the modal */
-    margin: auto;
-  }
-
-  .modal-content {
-    padding: 10px;
-    max-height: 100%; /* Prevent overflow */
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
-  }
-
-  .modal-body img {
-    max-width: 80%;
-  }
-}
-
-@media (max-width: 576px) { /* Mobile screens */
-  .modal-dialog {
-    max-width: 90%;
-    width: 95%;
-    height: auto;
-    max-height: 50vh; /* Ensure modal doesn't take full screen height */
-  }
-
-  .modal-content {
-    padding: 10px;
-    max-height: 100%; /* Prevent overflow */
-    overflow-y: auto; /* Allow scrolling if needed */
-  }
-
-  .modal-title {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-  }
-
-  .modal-body img {
-    max-width: 40%; /* Make images fit the modal width */
-  }
-
-  .modal-body p {
-    font-size: 0.9rem; /* Adjust paragraph font size */
-  }
-}
-
-/* New Media Query for 769px to 450px */
-@media (min-width: 450px) and (max-width: 768px) {
-  .modal-dialog {
-    max-width: 60%; /* Adjust width for this range */
-    height: auto; /* Allow height to adapt to content */
-    max-height: 30vh; /* Reduce modal height */
-    margin: auto;
-  }
-
-  .modal-content {
-    padding: 15px; /* Slightly reduce padding */
-    max-height: 100%; /* Prevent overflow */
-    overflow-y: auto; /* Enable scrolling if needed */
-  }
-
-  .modal-body img {
-    max-width: 30%; /* Scale images appropriately */
-  }
-
-  .modal-title {
-    font-size: 1.1rem; /* Adjust title size */
-  }
-
-  .modal-body p {
-    font-size: 0.95rem; /* Adjust text size */
-  }
-}
-
 .search-bar input {
   border-radius: 30px;
   padding: 10px 20px;
@@ -139,3 +64,81 @@
 .search-bar button:hover {
   background-color: #0056b3;
 }
+
+// Media queries
+
+@media (max-width: 768px) { 
+  .modal-dialog {
+    max-width: 80%;
+    width: 90%;
+    height: auto;
+    max-height: 50vh;
+    margin: auto;
+  }
+
+  .modal-content {
+    padding: 10px;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
+  .modal-body img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+    max-width: 90%;
+    width: 95%;
+    height: auto;
+    max-height: 50vh;
+  }
+
+  .modal-content {
+    padding: 10px;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
+  .modal-title {
+    font-size: 1rem;
+  }
+
+  .modal-body img {
+    max-width: 40%;
+  }
+
+  .modal-body p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .modal-dialog {
+    max-width: 60%;
+    height: auto;
+    max-height: 30vh;
+    margin: auto;
+  }
+
+  .modal-content {
+    padding: 15px;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
+  .modal-body img {
+    max-width: 30%;
+  }
+
+  .modal-title {
+    font-size: 1.1rem;
+  }
+
+  .modal-body p {
+    font-size: 0.95rem;
+  }
+}
+
+
