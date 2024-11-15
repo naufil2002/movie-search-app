@@ -41,7 +41,6 @@
   justify-content: flex-end;
 }
 
-// Responsive Design 
 @media (max-width: 768px) {
   .modal-dialog {
     max-width: 80%;
