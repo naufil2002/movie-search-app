@@ -65,8 +65,6 @@
   background-color: #0056b3;
 }
 
-// Media queries
-
 @media (max-width: 768px) { 
   .modal-dialog {
     max-width: 80%;
