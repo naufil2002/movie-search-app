@@ -12,8 +12,10 @@
 }
 
 .modal-dialog {
-  max-width: 40%;
-  width: 30%;
+  max-width: 50%;
+  width: 40%;
+  height: auto; /* Allow auto height for content */
+  max-height: 30vh;
 }
 
 .modal-content {
@@ -30,7 +32,7 @@
 }
 
 .modal-body img {
-  max-width: 50%; 
+  max-width: 30%; 
   height: auto;   
   display: block; 
   margin: 0 auto; 
@@ -46,7 +48,7 @@
     max-width: 80%;
     width: 90%;
     height: auto; /* Allow auto height for content */
-    max-height: 80vh; /* Restrict the height of the modal */
+    max-height: 50vh; /* Restrict the height of the modal */
     margin: auto;
   }
 
@@ -66,7 +68,7 @@
     max-width: 90%;
     width: 95%;
     height: auto;
-    max-height: 60vh; /* Ensure modal doesn't take full screen height */
+    max-height: 50vh; /* Ensure modal doesn't take full screen height */
   }
 
   .modal-content {
@@ -80,11 +82,39 @@
   }
 
   .modal-body img {
-    max-width: 100%; /* Make images fit the modal width */
+    max-width: 50%; /* Make images fit the modal width */
   }
 
   .modal-body p {
     font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+}
+
+/* New Media Query for 769px to 450px */
+@media (min-width: 450px) and (max-width: 768px) {
+  .modal-dialog {
+    max-width: 60%; /* Adjust width for this range */
+    height: auto; /* Allow height to adapt to content */
+    max-height: 30vh; /* Reduce modal height */
+    margin: auto;
+  }
+
+  .modal-content {
+    padding: 15px; /* Slightly reduce padding */
+    max-height: 100%; /* Prevent overflow */
+    overflow-y: auto; /* Enable scrolling if needed */
+  }
+
+  .modal-body img {
+    max-width: 30%; /* Scale images appropriately */
+  }
+
+  .modal-title {
+    font-size: 1.1rem; /* Adjust title size */
+  }
+
+  .modal-body p {
+    font-size: 0.95rem; /* Adjust text size */
   }
 }
 
