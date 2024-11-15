@@ -11,7 +11,7 @@ const MovieCard = ({ movie, onClick }) => {
           display: 'flex',
           flexDirection: 'column',
           height: '530px', 
-        }}
+        }} 
       >
         <img 
           src={movie.Poster} 
