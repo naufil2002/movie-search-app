@@ -43,6 +43,10 @@
   justify-content: flex-end;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) { /* Tablet and smaller screens */
   .modal-dialog {
     max-width: 80%;
@@ -82,7 +86,7 @@
   }
 
   .modal-body img {
-    max-width: 50%; /* Make images fit the modal width */
+    max-width: 40%; /* Make images fit the modal width */
   }
 
   .modal-body p {

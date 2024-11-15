@@ -1,10 +1,11 @@
 import React from 'react';
+import '../App.css'
 
 const MovieCard = ({ movie, onClick }) => {
   return (
     <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-5">
       <div 
-        className="card btn btn-primary" 
+        className="card cursor" 
         onClick={() => onClick(movie)}
         style={{
           display: 'flex',
