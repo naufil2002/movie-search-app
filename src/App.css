@@ -41,15 +41,19 @@
   justify-content: flex-end;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Tablet and smaller screens */
   .modal-dialog {
     max-width: 80%;
-    width: 80%;
-    height: auto;
+    width: 90%;
+    height: auto; /* Allow auto height for content */
+    max-height: 80vh; /* Restrict the height of the modal */
+    margin: auto;
   }
 
   .modal-content {
     padding: 10px;
+    max-height: 100%; /* Prevent overflow */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
   }
 
   .modal-body img {
@@ -57,29 +61,30 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) { /* Mobile screens */
   .modal-dialog {
-    max-width: 80%;
-    width: 90%;
-    margin: auto;
-    height: 80%;
+    max-width: 90%;
+    width: 95%;
+    height: auto;
+    max-height: 60vh; /* Ensure modal doesn't take full screen height */
   }
 
   .modal-content {
     padding: 10px;
+    max-height: 100%; /* Prevent overflow */
+    overflow-y: auto; /* Allow scrolling if needed */
+  }
+
+  .modal-title {
+    font-size: 1rem; /* Adjust font size for smaller screens */
   }
 
   .modal-body img {
-    max-width: 100%;
-  }
-
-
-  .modal-title {
-    font-size: 1.2rem;
+    max-width: 100%; /* Make images fit the modal width */
   }
 
   .modal-body p {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Adjust paragraph font size */
   }
 }
 

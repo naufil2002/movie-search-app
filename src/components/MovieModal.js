@@ -3,7 +3,11 @@ import '../App.css';
 
 function MovieModal({ movie, onClose }) {
   return (
-    <div className={`modal ${movie ? 'show' : ''}`} tabIndex="-1" style={movie ? { display: 'block' } : { display: 'none' }}>
+    <div
+      className={`modal ${movie ? 'show' : ''}`}
+      tabIndex="-1"
+      style={movie ? { display: 'block' } : { display: 'none' }}
+    >
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
           <button
