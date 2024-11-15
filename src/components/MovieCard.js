@@ -10,7 +10,7 @@ const MovieCard = ({ movie, onClick }) => {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          height: '450px', 
+          height: '530px', 
         }}
       >
         <img 
@@ -19,7 +19,7 @@ const MovieCard = ({ movie, onClick }) => {
           className="card-img-top" 
           style={{
             objectFit: 'cover',  
-            height: '325px',     
+            height: '430px',     
             width: '100%'        
           }} 
         />

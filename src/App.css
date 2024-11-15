@@ -139,6 +139,10 @@
   .modal-body p {
     font-size: 0.95rem;
   }
+
+  .cursor {
+    height: '500px'
+  }
 }
 
 
