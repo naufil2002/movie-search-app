@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  z-index: 9999;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-dialog {
+  max-width: 40%;
+  width: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.modal-header .btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.modal-body img {
+  max-width: 50%; 
+  height: auto;   
+  display: block; 
+  margin: 0 auto; 
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// Responsive Design 
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 80%;
+    width: 80%;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .modal-content {
+    padding: 10px;
   }
+
+  .modal-body img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+    max-width: 80%;
+    width: 90%;
+    margin: auto;
+    height: 80%;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+
+  .modal-body img {
+    max-width: 100%;
+  }
+
+
+  .modal-title {
+    font-size: 1.2rem;
+  }
+
+  .modal-body p {
+    font-size: 0.9rem;
+  }
+}
+
+.search-bar input {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  font-size: 16px;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
 }
